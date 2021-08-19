@@ -3,6 +3,7 @@ import './App.css';
 import Account from "./components/Account"
 import Count from "./components/Count"
 import IncButton from './components/incButton';
+import DecButton from './components/decButton;
 
 function App(){
   return(
@@ -11,6 +12,7 @@ function App(){
       <Account/>
       <Count/>
       <IncButton/>
+      <DecButton/>
       </div>
     </div>
   )
