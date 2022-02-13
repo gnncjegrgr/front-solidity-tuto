@@ -28,6 +28,10 @@ const MainPage = () => {
 
   const signFeeDelegatedTransaction = async () => {
     const caver = new Caver(window.klaytn);
+    const feePayer = caver.klay.accounts.wallet.add(
+      //클레이튼 개인키로 추가해줍니다.
+      '0x8cafa33df8c1740720bc4815ce7c7cd61d18aaf396bb2a3da5e197f0c7b85aff'
+    );
     const { rawTransaction: senderRawTransaction } = await caver.klay.signTransaction({
       type: 'FEE_DELEGATED_SMART_CONTRACT_EXECUTION',
       from: window.klaytn.selectedAddress,

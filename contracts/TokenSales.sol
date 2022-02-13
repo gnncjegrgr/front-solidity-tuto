@@ -36,7 +36,7 @@ contract TokenSales {
 
     function removeTokenOnSale(uint32 _tokenId) public {
         address tokenSeller = nftAddress.ownerOf(_tokenId);
-        require(msg.sender == tokenSeller, "콜러가 토큰 판매자가 아닙니다.");
+        require(msg.sender == tokenSeller, "caller is not seller");
         tokenPrice[_tokenId] = 0;
     }
 }

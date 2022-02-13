@@ -1,18 +1,14 @@
-import "./App.css";
-import Caver from "caver-js";
-import { Link } from "@mui/material";
-import {
-  BrowserRouter as Router,
-  Route,
-  Navigate,
-  Routes,
-} from "react-router-dom";
+import './App.css';
+import Caver from 'caver-js';
+import { Link } from '@mui/material';
+import { BrowserRouter as Router, Route, Navigate, Routes } from 'react-router-dom';
 
-import MainPage from "./pages/MainPage";
-import MakeNFT from "./pages/MakeNFT";
-import Search from "./pages/Search";
-import Sell from "./pages/Sell";
-import Purchase from "./pages/Purchase";
+import MainPage from './pages/MainPage';
+import MakeNFT from './pages/MakeNFT';
+import Search from './pages/Search';
+import Sell from './pages/Sell';
+import Purchase from './pages/Purchase';
+import PlayERC20 from './pages/PlayERC20';
 
 function App() {
   return (
@@ -27,6 +23,8 @@ function App() {
       <br />
       <Link href="/purchase">token 사기</Link>
       <br />
+      <Link href="/erc20">erc20토큰 함수 이용하기</Link>
+      <br />
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -34,6 +32,7 @@ function App() {
           <Route path="search" element={<Search />} />
           <Route path="sell" element={<Sell />} />
           <Route path="purchase" element={<Purchase />} />
+          <Route path="erc20" element={<PlayERC20 />} />
         </Routes>
       </Router>
     </div>

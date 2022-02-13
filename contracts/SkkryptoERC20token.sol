@@ -19,7 +19,7 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-library SafeMath {
+library SafeMathERC20 {
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
         uint256 c = a + b;
         require(c >= a, "SafeMath: addition overflow");
@@ -63,7 +63,7 @@ library SafeMath {
 
 
 contract SkkryptoERC20token is IERC20 {
-    using SafeMath for uint256;
+    using SafeMathERC20 for uint256;
 
     mapping (address => uint256) private _balances;
 
@@ -101,7 +101,7 @@ contract SkkryptoERC20token is IERC20 {
     }
 
 
-    function transfer(address recipient, uint256 amount) public returns (bool) {
+    function transferMyToken(address recipient, uint256 amount) public returns (bool) {
         _transfer(msg.sender, recipient, amount);
         return true;
     }
