@@ -14,7 +14,18 @@ const MainPage = () => {
 
   const [kasAccount, setKasAccount] = useState();
 
-  useEffect(() => {}, []);
+  useEffect(async () => {
+    console.log(caver);
+    const { rawTransaction: senderRawTransaction } = await caver.klay.signTransaction({
+      type: 'FEE_DELEGATED_SMART_CONTRACT_EXECUTION',
+      from: window.klaytn.selectedAddress,
+      to: '0x469f65e038A41fC36eCfBf0C366131bF87892388',
+      data: IPFSCONTRACT.methods.setIpfsAddress('2022-02-13', 'today').encodeABI(),
+      gas: '500000',
+      value: caver.utils.toPeb('0', 'KLAY'),
+    });
+    console.log(senderRawTransaction);
+  }, []);
 
   const activateKaikas = async () => {
     const accounts = await window.klaytn.enable();

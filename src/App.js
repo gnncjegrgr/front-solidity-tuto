@@ -9,6 +9,7 @@ import Search from './pages/Search';
 import Sell from './pages/Sell';
 import Purchase from './pages/Purchase';
 import PlayERC20 from './pages/PlayERC20';
+import AxiosPrac from './pages/AxiosPrac';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <br />
       <Link href="/erc20">erc20토큰 함수 이용하기</Link>
       <br />
+      <Link href="/axios-action">axios 실습</Link>
+      <br />
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -33,6 +36,7 @@ function App() {
           <Route path="sell" element={<Sell />} />
           <Route path="purchase" element={<Purchase />} />
           <Route path="erc20" element={<PlayERC20 />} />
+          <Route path="axios-action" element={<AxiosPrac />}></Route>
         </Routes>
       </Router>
     </div>

@@ -18,7 +18,7 @@ const PlayERC20 = () => {
       type: 'FEE_DELEGATED_SMART_CONTRACT_EXECUTION',
       from: window.klaytn.selectedAddress,
       to: ERC20ADDRESS,
-      data: ERC20CONTRACT.methods.transfer('0xf0375C82D83e269A324eae0ff0866f1850c6Ee2b', 10).encodeABI(),
+      data: ERC20CONTRACT.methods.transfer('0xf0375C82D83e269A324eae0ff0866f1850c6Ee2b', caver.utils.toPeb('1', 'KLAY')).encodeABI(),
       gas: '500000',
       value: caver.utils.toPeb('0', 'peb'),
     });
