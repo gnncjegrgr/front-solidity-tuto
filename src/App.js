@@ -10,6 +10,7 @@ import Sell from './pages/Sell';
 import Purchase from './pages/Purchase';
 import PlayERC20 from './pages/PlayERC20';
 import AxiosPrac from './pages/AxiosPrac';
+import NftPurchaseERC20 from './pages/NftPurchaseERC20';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
       <br />
       <Link href="/axios-action">axios 실습</Link>
       <br />
+      <Link href="/nftpurchase">token custom ERC20으로 사기</Link>
+      <br />
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -37,6 +40,7 @@ function App() {
           <Route path="purchase" element={<Purchase />} />
           <Route path="erc20" element={<PlayERC20 />} />
           <Route path="axios-action" element={<AxiosPrac />}></Route>
+          <Route path="/nftpurchase" element={<NftPurchaseERC20 />}></Route>
         </Routes>
       </Router>
     </div>

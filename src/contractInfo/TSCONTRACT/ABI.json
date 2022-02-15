@@ -1,1 +1,62 @@
-[{"constant":true,"inputs":[],"name":"nftAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function","signature":"0x5bf8633a"},{"constant":true,"inputs":[{"name":"","type":"uint32"}],"name":"tokenPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function","signature":"0xc19f22d4"},{"inputs":[{"name":"_tokenAddress","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor","signature":"constructor"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint32"},{"name":"_price","type":"uint256"}],"name":"setForSale","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function","signature":"0xf4c688d3"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint32"}],"name":"purchaseToken","outputs":[],"payable":true,"stateMutability":"payable","type":"function","signature":"0x28219b01"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint32"}],"name":"removeTokenOnSale","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function","signature":"0xc8f508a2"}]
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "nftAddress",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x5bf8633a"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint32" }],
+    "name": "tokenPrice",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xc19f22d4"
+  },
+  {
+    "inputs": [{ "name": "_tokenAddress", "type": "address" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor",
+    "signature": "constructor"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "_tokenId", "type": "uint32" },
+      { "name": "_price", "type": "uint256" }
+    ],
+    "name": "setForSale",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xf4c688d3"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "_tokenId", "type": "uint32" }],
+    "name": "purchaseToken",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0x28219b01"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "_tokenId", "type": "uint32" }],
+    "name": "removeTokenOnSale",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xc8f508a2"
+  }
+]

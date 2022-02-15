@@ -2,10 +2,8 @@ const STERC20CONTRACT = artifacts.require('SkkryptoERC20token');
 const fs = require('fs');
 
 module.exports = function (deployer) {
-  //let name = 'SkkryptoERC20token';
-  //let symbol = 'Skkrypto';
-  let name = 'testskkToken';
-  let symbol = 'testskkToken';
+  let name = 'SkkryptoERC20';
+  let symbol = 'Skkrypto';
   let decimals = 18;
 
   deployer.deploy(STERC20CONTRACT, name, symbol, decimals).then(() => {
