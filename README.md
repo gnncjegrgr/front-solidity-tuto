@@ -1,4 +1,5 @@
-### node_modules를 추가한 이유는 react 웹팩버전과 caver-js 가 충돌이 나서 caver-js를 추가했습니다. npm install 할 필요없이 그냥 npm start해서 사용하시면 됩니다.
+### XXXXXXX 안됨node_modules를 추가한 이유는 react 웹팩버전과 caver-js 가 충돌이 나서 caver-js를 추가했습니다. npm install 할 필요없이 그냥 npm start해서 사용하시면 됩니다.
+### node_modules 지웠습니다.(git clone이 잘 안되네요)
 
 #### 사용방법 
 1. prettier 설정 하기 https://nuggy875.tistory.com/109 여기 링크로 들어가서 설정해주세요.(필수는 아님)
